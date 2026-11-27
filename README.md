@@ -16,7 +16,34 @@ iv) Perform face detection with label in real-time video from webcam.
 - Matplotlib library (`matplotlib`)  
 - Jupyter Notebook or any Python IDE (e.g., VS Code, PyCharm)
 
+
 ## Algorithm
+
+```
+1. Import the required libraries such as OpenCV, NumPy, Matplotlib and OS.
+
+2. Read the input image using cv2.imread().
+
+3. Convert the original image from BGR to RGB and display it.
+
+4. Extract the Region of Interest (ROI) using array slicing.
+
+5. Create a mask and perform image segmentation using cv2.bitwise_and().
+
+6. Convert the image into grayscale using cv2.cvtColor().
+
+7. Apply Gaussian Blur to reduce noise in the image.
+
+8. Perform Canny Edge Detection and find contours using OpenCV functions.
+
+9. Load the MobileNet-SSD model and detect objects with confidence greater than 0.5.
+
+10. Draw bounding boxes with object labels and display the final output images using Matplotlib.
+
+```
+  
+
+## Program
 
 ```
  import cv2
